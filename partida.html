@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apanhada! 😂</title>
+    <style>
+        body {
+            font-family: 'Impact', sans-serif; /* Fonte forte e de impacto */
+            background-color: #ff6347; /* Vermelho choque! */
+            color: white;
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden; /* Para garantir que o confetti não saia do body */
+        }
+        .message-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            max-width: 700px;
+            transform: rotate(-3deg); /* Ligeiramente inclinado para um ar mais divertido */
+            animation: fadeInRotate 1s ease-out forwards; /* Animação de entrada */
+            position: relative;
+            z-index: 10; /* Para ficar por cima do confetti */
+        }
+        h1 {
+            font-size: 5em;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px #ffd700; /* Sombra dourada para destacar */
+            line-height: 1.1;
+            animation: textPop 0.8s ease-out 1s forwards; /* Animação depois do fadein */
+            opacity: 0; /* Começa invisível para a animação */
+        }
+        p {
+            font-size: 2em;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ffe0b3; /* Cor mais clara para o parágrafo */
+            animation: textPop 0.8s ease-out 1.2s forwards; /* Animação depois do fadein */
+            opacity: 0; /* Começa invisível para a animação */
+        }
+        .emoji {
+            font-size: 1.5em;
+        }
+
+        /* Animação para a entrada do conteúdo */
+        @keyframes fadeInRotate {
+            0% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+            100% { opacity: 1; transform: scale(1) rotate(-3deg); }
+        }
+
+        /* Animação para o texto aparecer */
+        @keyframes textPop {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Efeito de Confetti (CSS puro, opcional mas divertido) */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f0f; /* Cor inicial */
+            top: -10px; /* Começa acima da tela */
+            animation: fall 5s linear infinite;
+            border-radius: 50%; /* Bolinhas */
+            opacity: 0;
+            z-index: 5;
+        }
+
+        /* Para variar as cores e posições do confetti */
+        .confetti:nth-child(2n) { background-color: #0ff; left: 10%; animation-delay: 0.5s; transform: scale(0.8); }
+        .confetti:nth-child(3n) { background-color: #ff0; left: 25%; animation-delay: 1s; transform: scale(1.2); }
+        .confetti:nth-child(4n) { background-color: #f0f0; left: 40%; animation-delay: 1.5s; transform: scale(0.7); }
+        .confetti:nth-child(5n) { background-color: #0f0; left: 55%; animation-delay: 2s; transform: scale(1.1); }
+        .confetti:nth-child(6n) { background-color: #f00; left: 70%; animation-delay: 2.5s; transform: scale(0.9); }
+        .confetti:nth-child(7n) { background-color: #00f; left: 85%; animation-delay: 3s; transform: scale(1.3); }
+
+        @keyframes fall {
+            0% { top: -10%; opacity: 0; transform: rotate(0deg); }
+            20% { opacity: 1; }
+            100% { top: 110%; opacity: 0; transform: rotate(720deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <div class="message-container">
+        <h1>😂 GANDA NABA GABRIELA! 😂</h1>
+        <p>Caíste direitinha na partida!<span class="emoji">😜</span></p>
+        <p>O teu presente é esta gargalhada!</p>
+    </div>
+</body>
+</html>
