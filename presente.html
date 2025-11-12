@@ -3,74 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARABÉNS, GABRIELA! 🎉</title>
+    <title>KIKO MILANO - Notificação de Presente Exclusivo!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif; /* Para um ar mais divertido e descontraído */
-            background: linear-gradient(135deg, #f0e68c, #ffebcd); /* Um gradiente dourado/creme */
-            color: #8b0000; /* Vermelho escuro para contraste */
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Ocupa a altura total da janela */
+            min-height: 100vh;
             margin: 0;
             box-sizing: border-box;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
-            border-radius: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
             padding: 40px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            animation: bounceIn 1s ease-out; /* Animação de entrada */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .logo {
+            margin-bottom: 30px;
+        }
+        .logo img {
+            max-width: 180px; /* Tamanho da logo KIKO */
+            height: auto;
         }
         h1 {
-            color: #ff4500; /* Laranja avermelhado vibrante */
-            font-size: 3.5em;
+            color: #E20074; /* Rosa característico da KIKO */
+            font-size: 2.8em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px #ffd700; /* Sombra dourada */
+            font-weight: 700;
+        }
+        h2 {
+            color: #555;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-weight: 400;
         }
         p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-            line-height: 1.5;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
-        .present-button {
+        .call-to-action {
+            margin-top: 40px;
+        }
+        .claim-button {
             display: inline-block;
-            background-color: #4CAF50; /* Verde */
+            background-color: #E20074; /* Rosa KIKO */
             color: white;
-            padding: 18px 35px;
+            padding: 15px 35px;
             text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.8em;
-            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.4em;
+            font-weight: 700;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .present-button:hover {
-            background-color: #45a049; /* Verde mais escuro no hover */
-            transform: translateY(-3px); /* Pequeno efeito de elevação */
+        .claim-button:hover {
+            background-color: #c90065; /* Rosa KIKO mais escuro no hover */
+            transform: translateY(-2px);
         }
-        /* Animação para a entrada do conteúdo */
-        @keyframes bounceIn {
-            0% { opacity: 0; transform: scale(0.3); }
-            50% { opacity: 1; transform: scale(1.05); }
-            70% { transform: scale(0.9); }
-            100% { transform: scale(1); }
+        .footer-text {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🥳 PARABÉNS! 🥳</h1>
-        <p>A tua sorte grande chegou! Foste selecionada para receber um presente ÚNICO e ESPECTACULAR!</p>
-        <p>Mas tens de reclamá-lo AGORA!</p>
-        <a href="partida.html" class="present-button">CLICA AQUI PARA RECLAMAR O TEU PRESENTE SURPRESA!</a>
-        <p style="font-size: 0.9em; margin-top: 30px; color: #555;">(Não vais acreditar no que te espera!)</p>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/KIKO_MILANO_logo.svg/langpt-280px-KIKO_MILANO_logo.svg.png" alt="KIKO MILANO Logo">
+        </div>
+        <h1>✨ Notificação de Presente Exclusivo! ✨</h1>
+        <h2>Parabéns!</h2>
+        <p>A KIKO MILANO tem o prazer de informar que foi selecionada para receber um <strong>presente especial de agradecimento</strong> pela sua fidelidade e paixão por beleza.</p>
+        <p>Esta é uma oferta exclusiva, disponível apenas para um número limitado de clientes.</p>
+        <p>Para revelar e resgatar o seu presente KIKO MILANO, por favor, clique no botão abaixo:</p>
+
+        <div class="call-to-action">
+            <a href="link-para-a-partida.html" class="claim-button">RESGATE O SEU PRESENTE AGORA!</a>
+        </div>
+
+        <p class="footer-text">Esta oferta é válida por tempo limitado. Os termos e condições aplicam-se.</p>
     </div>
 </body>
-
 </html>
